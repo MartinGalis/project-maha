@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title></title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox.js/v2.2.4/mapbox.js'></script>
+    <script src="https://cdn.maptiks.com/maptiks-leaflet.min.js"></script>
+     <link href='https://api.tiles.mapbox.com/mapbox.js/v2.2.4/mapbox.css' rel='stylesheet' />
+     <style>
+        body { margin:0; padding:0; }
+        #map { position:absolute; top:0; bottom:0; width:100%; }
+
+
+    </style>
+</head>
+<body>
+
+<div id='map'></div>
+<script>
+// L.mapbox.accessToken = 'pk.eyJ1IjoidHVuZ3N0ZW5hZHZlcnRpc2luZyIsImEiOiJCOVRRRlZZIn0.DZrjd1UxzfD5GEO-DGyPeQ';
+// L.mapbox.map('map', 'tungstenadvertising.0ejh1pjm').setView([37.5, -120], 7);
+
+// maptiks.trackcode='cd02c3aa-6877-4413-b792-edaa23a83b14';
+L.mapbox.accessToken = 'pk.eyJ1IjoiZGlnaXRhbGdsb2JlIiwiYSI6ImNpb3N5cGoxYjAwYTB0em01NHk4ZzVnMzIifQ.-VEBSntt-ci2MPZLJxJQlA';
+
+// var map = L.mapbox.map('map', null, {
+//     maptiks_id: 'Maps API Mapboxjs Standard',
+//         maxZoom: 18
+// }).setView([37.5, -120], 7);
+
+var map = L.mapbox.map('map', 'tungstenadvertising.0ejh1pjm').setView([37.5, -120], 7);
+
+var layers = {
+    "DigitalGlobe Maps API: Vivid Imagery with Streets": L.mapbox.tileLayer('digitalglobe.nmmigejm'),
+        "Mapbox API: Light": L.mapbox.tileLayer('tungstenadvertising.0ejh1pjm')
+};
+
+var base = L.mapbox.tileLayer('digitalglobe.nmmigejm').addTo(map);
+
+L.control.layers(layers, null, {
+    collapsed: false
+}).addTo(map);
+
+</script>
+
+
+
+</body>
+</html>

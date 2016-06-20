@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title></title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.20.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.20.0/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        body { margin:0; padding:0; }
+        #map { position:absolute; top:0; bottom:0; width:100%; }
+    </style>
+</head>
+<body>
+
+<style>
+    .mapboxgl-popup {
+        max-width: 800px;
+        font: 16px/24px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    }
+
+    .marker-title {
+        font-weight: 700;
+    }
+</style>
+<div id='map'></div>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoibWFydGluZ2FsaXMiLCJhIjoiY2ltdWV0ZWF5MDA3OHc4bTIwb2JndXJ1aCJ9.r0mB7iXgKlg_ArgmjIjF5A';
+var markers = {
+    "type": "FeatureCollection",
+    "features": [{
+        "type": "Feature",
+        "properties": {
+            "description": "<div class=\"marker-title\">Alborz Farms</div><p><a href=\"http://www.example.com\" target=\"_blank\" title=\"Opens in a new window\">Target Website</a>  Gross Acres - 320, Location - County - Kern, Crop - Pistachios </p>",
+            "marker-symbol":"marker"
+         },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-119.3675555, 35.3658611]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "description": "<div class=\"marker-title\">Shasti Farms</div><p><a href=\"http://www.example.com\" target=\"_blank\" title=\"Opens in a new window\">Target Website</a>  Gross Acres - 940, Location - County - Kern, Crop - Pistachios </p>",
+            "marker-symbol": "marker"
+         },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-119.5913889, 35.6288916]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "description": "<div class=\"marker-title\">Paariz Farm</div><p><a href=\"http://www.example.com\" target=\"_blank\" title=\"Opens in a new window\">Target Website</a>  Gross Acres - 961, Location - County - Kern, Crop - Pistachios </p>",
+            "marker-symbol": "marker"
+         },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-119.4460750, 35.7121472]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "description": "<div class=\"marker-title\">Payvand Farms</div><p><a href=\"http://www.example.com\" target=\"_blank\" title=\"Opens in a new window\">Target Website</a>  Gross Acres - 640, Location - County - Kern, Crop - Pistachios </p>",
+            "marker-symbol": "marker"
+         },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-119.4460750, 35.7121472]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "description": "<div class=\"marker-title\">Saty Farm</div><p><a href=\"http://www.example.com\" target=\"_blank\" title=\"Opens in a new window\">Target Website</a>  Gross Acres - 235, Location - County - Kern, Crop - Pistachios </p>",
+            "marker-symbol": "marker"
+         },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-119.4306778, 35.6923611]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "description": "<div class=\"marker-title\">Lone Palm Ranch</div><p><a href=\"http://www.example.com\" target=\"_blank\" title=\"Opens in a new window\">Target Website</a>  Gross Acres - 643, Location - County - Kern, Crop - Pistachios </p>",
+            "marker-symbol": "marker"
+         },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-119.4915361, 36.0291056]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "description": "<div class=\"marker-title\">Raaviz Farms</div><p><a href=\"http://www.example.com\" target=\"_blank\" title=\"Opens in a new window\">Target Website</a>  Gross Acres - 432, Location - County - Kern, Crop - Pistachios </p>",
+            "marker-symbol": "marker"
+         },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-119.3925250, 35.3701528]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "description": "<div class=\"marker-title\">Vista Orchards South</div><p><a href=\"http://www.example.com\" target=\"_blank\" title=\"Opens in a new window\">Target Website</a>  Gross Acres - 396, Location - County - Kern, Crop - Pistachios </p>",
+            "marker-symbol": "marker"
+         },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-118.8067778, 35.0392444]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "description": "<div class=\"marker-title\">Vista Orchards North</div><p><a href=\"http://www.example.com\" target=\"_blank\" title=\"Opens in a new window\">Target Website</a>  Gross Acres - 499, Location - County - Colusa/Glenn, Crop - Walnuts </p>",
+            "marker-symbol": "marker"
+         },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-121.9889972, 39.4461333]
+        }
+    },{
+        "type": "Feature",
+        "properties": {
+            "description": "<div class=\"marker-title\">Dixieland Farms</div><p><a href=\"http://www.example.com\" target=\"_blank\" title=\"Opens in a new window\">Target Website</a>  Gross Acres - 1167, Location - County - Solano, Crop - Almonds/Walnuts</p>",
+            "marker-symbol": "marker"
+         },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-121.8737694, 38.4573111]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "description": "<div class=\"marker-title\">Tranquility Orchards</div><p><a href=\"http://www.example.com\" target=\"_blank\" title=\"Opens in a new window\">Target Website</a>  Gross Acres - 606, Location - County - Solano, Crop - Almonds/Walnuts</p>",
+            "marker-symbol": "marker"
+         },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-121.8660167, 38.4268556]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "description": "<div class=\"marker-title\">Mersal Farm</div><p><a href=\"http://www.example.com\" target=\"_blank\" title=\"Opens in a new window\">Target Website</a>  Gross Acres - 1220, Location - County - Merced, Crop - Almonds</p>",
+            "marker-symbol": "marker"
+         },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-120.5066194, 37.2512778]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "description": "<div class=\"marker-title\">Farazad Ranch</div><p><a href=\"http://www.example.com\" target=\"_blank\" title=\"Opens in a new window\">Target Website</a>  Gross Acres - 1815, Location - County - Merced, Crop - Pistachios</p>",
+            "marker-symbol": "marker"
+         },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-120.5644333, 37.1566056]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "description": "<div class=\"marker-title\">Karun Farm</div><p><a href=\"http://www.example.com\" target=\"_blank\" title=\"Opens in a new window\">Target Website</a>  Gross Acres - 800, Location - County - Fresno, Crop - Pistachio/Almonds</p>",
+            "marker-symbol": "marker"
+         },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-120.0226750, 36.1600306]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "description": "<div class=\"marker-title\">Meymand Farm</div><p><a href=\"http://www.example.com\" target=\"_blank\" title=\"Opens in a new window\">Target Website</a>  Gross Acres - 321, Location - County - Fresno/Kings, Crop - Pistachios</p>",
+            "marker-symbol": "marker"
+         },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-120.0266944, 36.1308778]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "description": "<div class=\"marker-title\">Seanaria Farms</div><p><a href=\"http://www.example.com\" target=\"_blank\" title=\"Opens in a new window\">Target Website</a>  Gross Acres - 2075, Location - County - Madera, Crop - Pistachio/Almonds</p>",
+            "marker-symbol": "marker"
+         },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-120.2912250, 36.8583722]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "description": "<div class=\"marker-title\">Nilufarm</div><p><a href=\"http://www.example.com\" target=\"_blank\" title=\"Opens in a new window\">Target Website</a>  Gross Acres - 743, Location - County - Madera, Crop - Pistachios </p>",
+            "marker-symbol": "marker"
+         },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-120.2494556, 36.8000778]
+        }
+    }]
+};
+
+var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/light-v9',
+    center: [-120, 37.5],
+    zoom: 5.75
+});
+
+map.on('load', function () {
+    // Add marker data as a new GeoJSON source.
+    map.addSource("markers", {
+        "type": "geojson",
+        "data": markers
+    });
+
+    // Add a layer showing the markers.
+    map.addLayer({
+        "id": "markers",
+        "type": "symbol",
+        "source": "markers",
+        "layout": {
+            "icon-image": "{marker-symbol}-15",
+           "icon-allow-overlap": true
+        }
+    });
+});
+
+
+// When a click event occurs near a marker icon, open a popup at the location of
+// the feature, with description HTML from its properties.
+map.on('click', function (e) {
+    var features = map.queryRenderedFeatures(e.point, { layers: ['markers'] });
+
+    if (!features.length) {
+        return;
+        
+    }
+
+    var feature = features[0];
+
+    // Populate the popup and set its coordinates
+    // based on the feature found.
+    var popup = new mapboxgl.Popup()
+        .setLngLat(feature.geometry.coordinates)
+        .setHTML(feature.properties.description)
+        .addTo(map);
+});
+
+// Use the same approach as above to indicate that the symbols are clickable
+// by changing the cursor style to 'pointer'.
+map.on('mousemove', function (e) {
+    var features = map.queryRenderedFeatures(e.point, { layers: ['markers'] });
+    map.getCanvas().style.cursor = (features.length) ? 'pointer' : '';
+});
+</script>
+
+</body>
+</html>
