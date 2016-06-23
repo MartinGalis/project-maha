@@ -1,0 +1,345 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "marker-ipmqx4i5g",
+        "title": "Nilufarm",
+        "acres": "743",
+	"location": "Madera County",
+	"crop": "Pistachios",
+        "marker-size": "large",
+        "marker-color": "#1087bf",
+        "marker-symbol": "",
+      },
+      "geometry": {
+        "coordinates": [
+          -120.249455,
+          36.800077
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "marker-ipmqv05zf",
+        "title": "Seanaria Farms",
+	"acres": "2075",
+        "location": "Madera County",
+	"crop": "Pistachio/Almonds",
+        "marker-size": "large",
+        "marker-color": "#1087bf",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "coordinates": [
+          -120.291225,
+          36.858372
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "marker-ipmqtg9ae",
+        "title": "Meymand Farm",
+	"acres": "321",
+        "location": "Fresno/Kings Counties",
+	"crop": "Pistachios",
+        "marker-size": "large",
+        "marker-color": "#1087bf",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "coordinates": [
+          -120.026694,
+          36.130877
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "marker-ipmpomy50",
+        "title": "Alborz Farms",
+	"acres": "320",
+        "location": "Kern County",
+	"crop": "Pistachios",
+	"marker-size": "large",
+        "marker-color": "#1087bf",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "coordinates": [
+          -119.366455,
+          35.365535
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "marker-ipmpyg871",
+        "title": "Shasti Farms",
+	"acres": "940",
+        "location": "Kern County",
+	"crop": "Pistachios",
+        "marker-size": "large",
+        "marker-color": "#1087bf",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "coordinates": [
+          -119.591388,
+          35.628891
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "marker-ipmq12ly2",
+        "title": "Paariz Farm",	
+	"acres": "961",
+        "location": "Kern County",
+	"crop": "Pistachios",
+        "marker-size": "large",
+        "marker-color": "#1087bf",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "coordinates": [
+          -119.446075,
+          35.712147
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "marker-ipmqpjl2c",
+        "title": "Farazad Ranch",
+	"acres": "1815",
+        "location": "Merced County",
+	"crop": "Pistachios",
+        "marker-size": "large",
+        "marker-color": "#1087bf",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "coordinates": [
+          -120.564433,
+          37.156605
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "marker-ipmqrew2d",
+        "title": "Karun Farm",
+	"acres": "800",
+        "location": "Fresno County",
+	"crop": "Pistachio/Almonds",
+        "marker-size": "large",
+        "marker-color": "#1087bf",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "coordinates": [
+          -120.022675,
+          36.16003
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "marker-ipmqn2v4b",
+        "title": "Mersal Farm",
+	"acres": "1220",
+        "location": "Merced County",
+	"crop": "Almonds",
+        "marker-size": "large",
+        "marker-color": "#1087bf",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "coordinates": [
+          -120.506619,
+          37.251277
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "marker-ipmqe9ej7",
+        "title": "Vista Orchards South",
+	"acres": "396",
+        "location": "Kern County",
+	"crop": "Pistachios",
+        "marker-size": "large",
+        "marker-color": "#1087bf",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "coordinates": [
+          -118.806777,
+          35.039244
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "marker-ipmqgg538",
+        "title": "Vista Orchards North",
+	"acres": "499",
+        "location": "Colusa County",
+	"crop": "Walnuts",
+        "marker-size": "large",
+        "marker-color": "#1087bf",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "coordinates": [
+          -121.988997,
+          39.446133
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "marker-ipmq4e1t3",
+        "title": "Payvand Farms",
+	"acres": "640",
+        "location": "Kern County",
+	"crop": "Pistachios",
+        "marker-size": "large",
+        "marker-color": "#1087bf",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "coordinates": [
+          -119.446075,
+          35.712147
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "marker-ipmq7elp5",
+        "title": "Lone Palm Ranch",
+	"acres": "643",
+        "location": "Kern County",
+	"crop": "Pistachios",
+        "marker-size": "large",
+        "marker-color": "#1087bf",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "coordinates": [
+          -119.491536,
+          36.029105
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "marker-ipmqi6op9",
+        "title": "Dixieland Farms",
+	"acres": "1167",
+        "location": "Solano County",
+	"crop": "Almonds/Walnuts",
+        "marker-size": "large",
+        "marker-color": "#1087bf",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "coordinates": [
+          -121.873769,
+          38.457311
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "marker-ipmq66xg4",
+        "title": "Saty Farm",
+	"acres": "235",
+        "location": "Kern County",
+	"crop": "Pistachios",
+        "marker-size": "large",
+        "marker-color": "#1087bf",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "coordinates": [
+          -119.430677,
+          35.692361
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "marker-ipmql5s8a",
+        "title": "Tranquility Orchards",
+	"acres": "606",
+        "location": "Solano County",
+	"crop": "Almonds/Walnuts",
+        "marker-size": "large",
+        "marker-color": "#1087bf",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "coordinates": [
+          -121.866016,
+          38.426855
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "marker-ipmq8o636",
+        "title": "Raaviz Farms",
+	"acres": "432",
+        "location": "Kern County",
+	"crop": "Pistachios",
+        "marker-size": "large",
+        "marker-color": "#1087bf",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "coordinates": [
+          -119.392525,
+          35.370152
+        ],
+        "type": "Point"
+      }
+    }
+  ]
+}
